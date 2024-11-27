@@ -20,7 +20,7 @@ mongoose.connect(MONGO_URI)
 .catch((err) => console.log(err))
 
 app.use(cors({
-    origin:'http://localhost:3000',
+    origin: ['http://localhost:3000','https://deploytestfront-0xx5.onrender.com'],
     methods: ['GET', 'PUT', 'POST', 'DELETE'],
     credentials : true,
 }))
